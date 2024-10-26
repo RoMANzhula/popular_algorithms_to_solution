@@ -3,7 +3,7 @@ package algorithms.depth_first_search;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepthFirstSearchInGraph {
+public class DepthFirstSearchInUndirectedGraph {
 
     public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class DepthFirstSearchInGraph {
         boolean[] visitedVertices = new boolean[vertices];
 
         // create a DFS starting at vertex 0
-        DepthFirstSearchInGraph solution = new DepthFirstSearchInGraph();
+        DepthFirstSearchInUndirectedGraph solution = new DepthFirstSearchInUndirectedGraph();
         System.out.print("Here DFS graph traversal: ");
         solution.depthFirstSearch(0, visitedVertices, graph); // output: 0 1 3 2 4
 
